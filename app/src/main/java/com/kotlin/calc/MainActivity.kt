@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 val num2 = splitValue[1]
                 inputText2.text = (num1.toDouble()*num2.toDouble()).toString()
             }
-            else{
+            else if(inputText2.text.contains("/")){
                 val splitValue = inputText2.text.split("/")
                 val num1 = splitValue[0]
                 val num2 = splitValue[1]
